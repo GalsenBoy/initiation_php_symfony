@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ExerciceTpController!
+{% endblock %}
+
+{% block body %}
+	<style>
+		ul {
+			list-style-type: none;
+			font: 18px / 1.5 sans-serif;
+            display:flex;
+		}
+		li a {
+			text-decoration: none;
+            margin: 1Rem;
+            color:black;
+		}
+	</style>
+
+	<div class="example-wrapper">
+		<ul>
+			<li><a href="{{ path('index_rouge') }}">Carré Rouge</a></li>
+			<li><a href="{{ path('index_bleu') }}">Carré Bleu</a></li>
+			<li><a href="{{ path('index_heure') }}">Date et Heure d'aujourd'hui</a></li>
+		</ul>
+	</div>
+{% endblock %}
