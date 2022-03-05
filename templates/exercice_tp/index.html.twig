@@ -5,6 +5,10 @@
 
 {% block body %}
 	<style>
+    header{
+        background-color:gray;
+        padding:2rem;
+    }
 		ul {
 			list-style-type: none;
 			font: 18px / 1.5 sans-serif;
@@ -14,14 +18,18 @@
 			text-decoration: none;
             margin: 1Rem;
             color:black;
+            padding:1em;
 		}
+        li a:hover{
+            background:rgb(220,220,220);
+        }
 	</style>
 
-	<div class="example-wrapper">
+	<header >
 		<ul>
 			<li><a href="{{ path('index_rouge') }}">Carré Rouge</a></li>
 			<li><a href="{{ path('index_bleu') }}">Carré Bleu</a></li>
 			<li><a href="{{ path('index_heure') }}">Date et Heure d'aujourd'hui</a></li>
 		</ul>
-	</div>
+	</header>
 {% endblock %}

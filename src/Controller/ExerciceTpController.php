@@ -11,7 +11,7 @@ class ExerciceTpController extends AbstractController
     #[Route('/time/now', name:'index_heure')]
     public function DateTime(): Response
     {
-        return new Response(date('d/m/Y à G:i:s'));
+        return new Response(date('d/m/Y à H:i:s'));
     }
 
     
